@@ -7,6 +7,9 @@
 #               internal audio monitor when running `recordmydesktop` with
 #               the following options:
 #               
+#                   recordmydesktop --no-frame --no-cursor --s_quality 10
+#                                   --on-the-fly-encoding
+#               
 # Requirements: Need to have `bc`, `avconv` and `sox` installed
 #
 
