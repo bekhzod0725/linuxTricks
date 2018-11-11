@@ -9,7 +9,7 @@
 #
 
 DIRECTORY=$1
-(ls $DIRECTORY | while read dir; do
+(ls "$DIRECTORY" | while read dir; do
     fpath=$(readlink -f "$DIRECTORY/$dir");
     duinfo=$(du "$fpath" | tail -n 1 | awk '{print $1/1024 "M"}');
     fpath=$(basename "$fpath");
